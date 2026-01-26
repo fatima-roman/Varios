@@ -47,10 +47,9 @@ public class EJ01 {
 	}
 	
 	static String palabraMasLarga(String[] palabras) {
-		int longitud =0; 
 		String masLarga = ""; 
 		for (int i = 0; i < palabras.length; i++) {
-			if (longitud > palabras[i].length()) {
+			if (masLarga.length() < palabras[i].length()) {
 				masLarga = palabras[i];
 			}
 		}
